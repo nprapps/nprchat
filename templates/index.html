@@ -12,19 +12,22 @@
 <h1>{{ PROJECT_NAME }}</h1>
 
 <form id="login-form">
-    <label for="username">
-        <input type="text" name="username" />
-    </label>
-    <input type="submit" />
+    <input type="text" name="username" placeholder="Username" />
+    <input type="submit" class="btn" value="Login" />
 </form>
+
+<form id="post-form">
+    <input type="text" name="text" />
+    <input type="submit" class="btn" value="Post" />
+</form>
+
+<div id="user-info">
+    You are logged in as: <strong><span class="username"></span></strong>. <a class="logout" href="javascript:;">Change username?</a>
+</div>
 
 <ul id="posts">
 </ul>
 
-<form id="post-form">
-    <input type="text" name="text" />
-    <input type="submit" />
-</form>
 {% endblock %}
 
 {% block wide_content %}
