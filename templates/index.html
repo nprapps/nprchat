@@ -1,21 +1,28 @@
 {% extends '_base.html' %}
 
 {% block extra_head %}
-<script type="text/javascript" src="https://cdn.firebase.com/v0/firebase.js"></script>
+<script type="text/javascript" src="https://cdn.firebase.com/v0/firebase.js"></script
 <script type="text/javascript" src="https://cdn.firebase.com/v0/firebase-auth-client.js"></script>
 {% endblock %}
 
 {% block header_content %}
 {% endblock %}
 
-
 {% block content %}
 <h1>{{ PROJECT_NAME }}</h1>
+
+<form id="login-form">
+    <label for="username">
+        <input type="text" name="username" />
+    </label>
+    <input type="submit" />
+</form>
+
 <ul id="posts">
 </ul>
 
 <form id="post-form">
-    <input type="text" class="text" />
+    <input type="text" name="text" />
     <input type="submit" />
 </form>
 {% endblock %}
