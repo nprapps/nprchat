@@ -9,9 +9,9 @@ They will be exposed to users. Use environment variables instead.
 
 import os
 
-PROJECT_NAME = 'App Template'
-DEPLOYED_NAME = 'app-template' 
-REPOSITORY_NAME = 'app-template'
+PROJECT_NAME = 'NPR Chat Prototype'
+DEPLOYED_NAME = 'nprchat' 
+REPOSITORY_NAME = 'nprchat'
 
 PRODUCTION_S3_BUCKETS = ['apps.npr.org', 'apps2.npr.org']
 PRODUCTION_SERVERS = ['cron.nprapps.org']
