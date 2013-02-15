@@ -1,38 +1,24 @@
 {% extends '_base.html' %}
 
+{% block extra_head %}
+<script type="text/javascript" src="https://cdn.firebase.com/v0/firebase.js"></script>
+<script type="text/javascript" src="https://cdn.firebase.com/v0/firebase-auth-client.js"></script>
+{% endblock %}
+
 {% block header_content %}
-<header>
-	<div class="container">
-		<div class="row">
-			<div class="span12">
-				<h1>Across-The-Top Header</h1>
-				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-			</div>
-		</div>
-	</div>
-</header>
 {% endblock %}
 
 
 {% block content %}
 <h1>{{ PROJECT_NAME }}</h1>
-<div id="story-meta">
-	<p class="byline">by <span>Name Here</span></p>
-	<p class="dateblock">
-		<span class="date">January 22, 2013</span>
-		<span class="time"> 3:37 AM</span>
-	</p>
-</div>
+<ul id="posts">
+</ul>
 
-<p id="template-example"></p>
+<form id="post-form">
+    <input type="text" class="text" />
+    <input type="submit" />
+</form>
 {% endblock %}
 
-
 {% block wide_content %}
-<div class="row">
-	<div class="span12">
-		<h2>This content goes to 12</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-	</div>
-</div>
 {% endblock %}

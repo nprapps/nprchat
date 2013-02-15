@@ -46,6 +46,9 @@ NPR_DFP = {
 
 GOOGLE_ANALYTICS_ID = 'UA-5828686-4'
 
+FIREBASE_HOST = 'nprchat.firebaseIO.com'
+FIREBASE_CHAT_KEY = 'testchat'
+
 def configure_targets(deployment_target):
     """
     Configure deployment targets. Abstracted so this can be
